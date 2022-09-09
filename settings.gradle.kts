@@ -22,5 +22,5 @@ dependencyResolutionManagement {
 rootProject.name = "kotlin-ci"
 
 include("app")
-include("list")
-include("utilities")
+include("core")
+include("domain")

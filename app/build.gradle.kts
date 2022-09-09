@@ -12,7 +12,7 @@ configure<com.android.build.gradle.AppExtension> {
 }
 
 dependencies {
-    implementation(project(":utilities"))
+    implementation(project(":domain"))
 
     implementation("androidx.core:core-ktx:_")
     implementation("androidx.appcompat:appcompat:_")
