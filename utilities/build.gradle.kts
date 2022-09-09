@@ -1,5 +1,5 @@
 plugins {
-    id("com.github.pgreze.kotlinci.library")
+    id("com.github.pgreze.kotlinci.android-library")
 }
 
 dependencies {
