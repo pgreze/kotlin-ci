@@ -4,7 +4,9 @@ import kotlin.test.Test
 import kotlin.test.assertTrue
 
 class SlackPosterTest {
-    @Test fun appHasAGreeting() {
+
+    @Test(expected = NullPointerException::class)
+    fun appHasAGreeting() {
         assertTrue(postToSlack("Hello from test"))
     }
 }

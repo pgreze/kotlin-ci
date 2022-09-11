@@ -1,15 +1,9 @@
 plugins {
-    application
     kotlin("jvm")
-}
-
-application {
-    mainClass.set("toolbox.AppKt")
+    `maven-publish`
 }
 
 dependencies {
-    implementation(project(":core"))
-
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     api(KotlinX.coroutines.core)

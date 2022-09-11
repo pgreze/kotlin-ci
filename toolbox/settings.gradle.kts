@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "kotlin-ci-toolbox"
 
 include("cli")
+include("core")
