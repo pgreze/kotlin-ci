@@ -1,2 +1,2 @@
 includeBuild("android")
-// includeBuild("toolbox")
+includeBuild("toolbox")

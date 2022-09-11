@@ -1,7 +1,7 @@
 # https://help.github.com/en/actions/language-and-framework-guides/building-and-testing-java-with-gradle
 # https://help.github.com/en/actions/language-and-framework-guides/publishing-java-packages-with-gradle
 
-name: Build
+name: Android-Build
 
 on:
   push:
@@ -26,21 +26,21 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('gradle/wrapper/*') }}
-          restore-keys: ${{ runner.os }}-gradle-${{ hashFiles('gradle/wrapper/*') }}
+          key: ${{ runner.os }}-gradle-${{ hashFiles('android/gradle/wrapper/*') }}
+          restore-keys: ${{ runner.os }}-gradle-${{ hashFiles('android/gradle/wrapper/*') }}
       - name: Cache Gradle packages
         uses: actions/cache@v1
         with:
           path: ~/.gradle/caches
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle.kts') }}
+          key: ${{ runner.os }}-gradle-${{ hashFiles('android/**/*.gradle.kts') }}
           restore-keys: ${{ runner.os }}-gradle
       # Build
       - name: Build
-        run: ./gradlew build --continue
+        run: ./android/gradlew build --continue
       - name: Publish Unit Test Results
         # https://github.com/marketplace/actions/publish-unit-test-results
         uses: EnricoMi/publish-unit-test-result-action@v1
         if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          files: ./*/build/test-results/**/*.xml
+          files: ./android/*/build/test-results/**/*.xml
