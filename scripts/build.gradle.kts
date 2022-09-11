@@ -1,6 +1,5 @@
 plugins {
     kotlin("jvm")
-    // id("org.jetbrains.kotlin.jvm") version "1.7.10"
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
@@ -17,7 +16,7 @@ val versions = org.jetbrains.kotlin.konan.properties.loadProperties(
 )
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions["version.kotlinx.coroutines"]}")
 
     val junit5Version = versions["version.junit.jupiter"]
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junit5Version")

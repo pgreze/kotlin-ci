@@ -18,7 +18,8 @@ repositories {
 val versions = org.jetbrains.kotlin.konan.properties.loadProperties(
     projectDir.resolve("../versions.properties").toString()
 )
-
+// In order to use a dependency in buildSrc,
+// first add it in the root build.gradle.kts buildscript to get it managed by refreshVersions.
 dependencies {
     implementation(gradleApi())
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin")

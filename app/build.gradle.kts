@@ -14,10 +14,10 @@ configure<com.android.build.gradle.AppExtension> {
 dependencies {
     implementation(project(":domain"))
 
-    implementation("androidx.core:core-ktx:_")
-    implementation("androidx.appcompat:appcompat:_")
-    implementation("com.google.android.material:material:_")
-    implementation("androidx.constraintlayout:constraintlayout:_")
-    implementation("androidx.navigation:navigation-fragment-ktx:_")
-    implementation("androidx.navigation:navigation-ui-ktx:_")
+    implementation(AndroidX.core.ktx)
+    implementation(AndroidX.appCompat)
+    implementation(Google.android.material)
+    implementation(AndroidX.constraintLayout)
+    implementation(AndroidX.navigation.fragmentKtx)
+    implementation(AndroidX.navigation.uiKtx)
 }
