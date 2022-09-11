@@ -1,8 +1,9 @@
 package com.github.pgreze.kotlinci.list
 
-import org.junit.jupiter.api.Test
-
-import org.junit.jupiter.api.Assertions.*
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertTrue
+import org.junit.Test
 
 class LinkedListTest {
     @Test fun testConstructor() {
