@@ -24,3 +24,9 @@ rootProject.name = "kotlin-ci"
 include("app")
 include("core")
 include("domain")
+include("scripts")
+// Only load scripts folder if required.
+//val includeScripts: String? by settings
+//if ("true" in arrayOf(System.getenv("CI"), includeScripts)) {
+//    includeBuild("scripts")
+//}
