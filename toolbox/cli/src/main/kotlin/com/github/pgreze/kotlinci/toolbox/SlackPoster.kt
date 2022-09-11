@@ -6,8 +6,7 @@ fun main() {
     postToSlack("こんにちは")
 }
 
-fun postToSlack(msg: String): Boolean {
+fun postToSlack(msg: String) {
     requireSlackToken()
     println("Message to slack: $msg")
-    return true
 }
