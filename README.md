@@ -4,7 +4,7 @@ This project is a sample of the various ways
 I introduced Kotlin in our Android CI.
 
 This was used in:
-+ a DroidKaigi prensentation (TODO: link)
++ a DroidKaigi prensentation https://bit.ly/kotlin-ci
 + a Mercari blog-post (TODO: link)
 
 ## Features
