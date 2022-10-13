@@ -5,7 +5,7 @@ I introduced Kotlin in our Android CI.
 
 This was used in:
 + a DroidKaigi prensentation https://bit.ly/kotlin-ci
-+ a Mercari blog-post (TODO: link)
++ a [Mercari blog-post](https://engineering.mercari.com/en/blog/entry/20221012-leverage-kotlin-in-your-android-ci/)
 
 ## Features
 
