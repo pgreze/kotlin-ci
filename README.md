@@ -1,19 +1,18 @@
 # Kotlinize your CI
 
-This project is a sample of the various ways
-I introduced Kotlin in our Android CI.
+This project contains samples of the various ways I introduced Kotlin in our Mercari app's Android CI.
 
-This was used in:
-+ a DroidKaigi prensentation https://bit.ly/kotlin-ci
-+ a Mercari blog-post (TODO: link)
+I shared this project in:
++ a DroidKaigi prensentation: [Kotlinize your CI, from Gradle tuning to Kotlin Script](https://bit.ly/kotlin-ci)
++ a Mercari blog post: [Leverage Kotlin in your Android CI](https://engineering.mercari.com/en/blog/entry/20221012-leverage-kotlin-in-your-android-ci/)
 
 ## Features
 
-The project is including 2 separate projects:
-+ the [./android](./android) project representing a consumer Android codebase.
-+ the [./toolbox](./toolbox) project implementing Docker shipped utilities used in the consumer projects.
+The two samples included in this project are:
++ a [./android](./android) project representing a consumer Android codebase.
++ a [./toolbox](./toolbox) project implementing Docker-shipped utilities used in consumer projects.
 
-This is showcasing following strategies:
+In this project, I showcase the following strategies:
 + Custom docker images
 + JavaExec tasks in a composite build (see [./android/scripts](./android/scripts))
 + Kotlin scripts
