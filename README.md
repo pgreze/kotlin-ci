@@ -3,8 +3,8 @@
 This project contains samples of the various ways I introduced Kotlin in our Mercari app's Android CI.
 
 I shared this project in:
-+ a DroidKaigi prensentation: [Kotlinize your CI, from Gradle tuning to Kotlin Script](https://bit.ly/kotlin-ci)
-+ a Mercari blog post: [Leverage Kotlin in your Android CI](https://engineering.mercari.com/en/blog/entry/20221012-leverage-kotlin-in-your-android-ci/)
++ a DroidKaigi prensentation: https://bit.ly/kotlin-ci
++ a Mercari blog post: https://engineering.mercari.com/en/blog/entry/20221012-leverage-kotlin-in-your-android-ci/
 
 ## Features
 
