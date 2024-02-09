@@ -3,7 +3,7 @@
 This project contains samples of the various ways I introduced Kotlin in our Mercari app's Android CI.
 
 I shared this project in:
-+ a DroidKaigi prensentation: https://bit.ly/kotlin-ci
++ a DroidKaigi presentation: https://bit.ly/kotlin-ci
 + a Mercari blog post: https://engineering.mercari.com/en/blog/entry/20221012-leverage-kotlin-in-your-android-ci/
 
 ## Features
